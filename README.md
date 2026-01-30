@@ -1,210 +1,198 @@
-# 🌍 Atmos
+# Atmos 🌍
 **Behavior-first carbon footprint tracking platform with ML-driven habit prioritization**
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Issues](https://img.shields.io/github/issues/shivansh-12315646/Atmos)](https://github.com/shivansh-12315646/Atmos/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/shivansh-12315646/Atmos)](https://github.com/shivansh-12315646/Atmos/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ---
 
 ## 📌 Overview
 
-**Atmos** is not just another carbon calculator. While most tools focus on *how much* carbon you emit, Atmos helps you understand **where your effort matters most**.
+**Atmos** is a real-time carbon footprint tracking platform that focuses on **behavior change** rather than just measuring emissions. Unlike traditional carbon calculators, Atmos helps users identify which habits have the highest climate impact and provides explainable, personalized recommendations for meaningful action.
 
-### 🔑 Key Difference
-- **Other tools:** "How much carbon did you emit?"
-- **Atmos:** "Where does your effort matter most, right now?"
+### 🎯 Core Philosophy
 
----
-
-## ✨ Features
-
-### Core Capabilities
-✅ **MCQ-based habit tracking** — Low-friction, instant activity logging  
-✅ **Real-time emission calculation** — Based on IPCC/GHG Protocol standards  
-✅ **ML-driven behavior clustering** — "People like you" insights  
-✅ **Impact ranking** — High-impact vs low-impact habit identification  
-✅ **Explainable recommendations** — Know *why* each suggestion matters  
-✅ **Map-based visualization** — Regional benchmarks and comparisons  
-✅ **Enterprise-grade dashboards** — Professional ESG-style reporting  
-
-### What Atmos Does NOT Do (Important)
-❌ Predict climate change  
-❌ Claim exact carbon accuracy  
-❌ Perform surveillance or passive tracking  
-❌ Judge or shame users  
+- ✅ **Behavior-first design** — Focus on actionable habits, not guilt
+- ✅ **Explainable insights** — Every recommendation is backed by data
+- ✅ **User-reported data** — Low-friction MCQ-based tracking
+- ✅ **ML-driven prioritization** — Identify high-impact leverage points
+- ✅ **Ethical boundaries** — No surveillance, no shaming, no overclaiming
 
 ---
 
-## 🎯 Problem Statement
+## 🚀 Key Features
 
-Most existing carbon footprint platforms:
-- Focus on carbon totals, not behavior change
-- Provide generic advice that is not personalized
-- Do not explain which habits actually matter most
-- Cause carbon fatigue and low long-term engagement
+### For Individual Users
+- 📊 **Real-time activity logging** via MCQ-based habit tracking
+- 🔍 **Impact ranking** — See which habits matter most
+- 📈 **Personal dashboards** — Track emissions by category & trend over time
+- 🤖 **ML-powered clustering** — "People like you" insights
+- 💡 **Habit replacement suggestions** — Ranked by impact, effort, and feasibility
 
-**The real problem is not lack of data — it's lack of actionable, personalized, and explainable guidance.**
+### For Organizations
+- 🏢 **Enterprise ESG dashboards** — Track team/department carbon footprints
+- 📉 **Reduction tracking** — Monitor progress vs baseline
+- 🗺️ **Regional benchmarking** — Compare against similar organizations
+
+### Technical Highlights
+- ⚡ **Instant emission calculation** using IPCC/GHG Protocol standards
+- 🗺️ **Map-based visualization** with regional averages
+- 🧠 **Explainable AI** — Every insight is interpretable
+- 🔒 **Privacy-first** — User consent & transparent data use
 
 ---
 
-## 🏗️ Tech Stack
+## 🛠️ Tech Stack
 
-### Frontend
-- **Framework:** React / Next.js
-- **Maps:** Mapbox / Leaflet
-- **Charts:** Recharts / Chart.js
-- **Styling:** Tailwind CSS
-
-### Backend
-- **Runtime:** Node.js + Express (or Django)
-- **Database:** PostgreSQL
-- **API:** RESTful / GraphQL
-
-### ML Services
-- **Language:** Python
-- **Framework:** scikit-learn
-- **Techniques:** K-Means clustering, rule-based hybrid scoring
-
-### Deployment
-- **Frontend:** Vercel
-- **Backend:** Render / Railway
-- **Database:** Supabase / Railway PostgreSQL
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React / Next.js |
+| **Backend** | Node.js + Express |
+| **Database** | PostgreSQL |
+| **ML Services** | Python (scikit-learn) |
+| **Maps** | Mapbox / Leaflet |
+| **Charts** | Recharts / Chart.js |
+| **Deployment** | Vercel + Render |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Atmos/
-├── frontend/              # React/Next.js frontend
-│   ├── components/        # Reusable UI components
-│   ├── pages/             # Page routes
-│   ├── services/          # API integration
-│   └── utils/             # Helper functions
-│
-├── backend/               # Node.js/Express backend
-│   ├── routes/            # API endpoints
-│   ├── controllers/       # Business logic
-│   ├── models/            # Database models
-│   ├── services/          # Emission calculation engine
-│   └── middleware/        # Auth, validation, etc.
-│
-├── ml-services/           # Python ML services
-│   ├── clustering/        # User behavior clustering
-│   ├── recommendations/   # Habit ranking algorithms
-│   └── models/            # Trained ML models
-│
-├── docs/                  # Documentation
-│   ├── PRD.md             # Product Requirements Document
-│   ├── ARCHITECTURE.md    # System architecture
-│   ├── API.md             # API documentation
-���   └── ETHICS.md          # Ethics & data use policy
-│
-└── README.md              # This file
+atmos/
+├── frontend/          # React/Next.js application
+├── backend/           # Node.js API server
+├── ml-services/       # Python ML recommendation engine
+├── docs/              # Documentation
+│   ├── PRD.md         # Product Requirements Document
+│   ├── ARCHITECTURE.md # System architecture
+│   ├── API.md         # API documentation
+│   └── ETHICS.md      # Ethical guidelines & limitations
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🎓 Installation & Setup
 
 ### Prerequisites
-- Node.js (v18+)
-- Python (v3.9+)
-- PostgreSQL (v14+)
-- Git
+- Node.js >= 18.x
+- Python >= 3.9
+- PostgreSQL >= 14
 
-### Installation
+### Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/shivansh-12315646/Atmos.git
-   cd Atmos
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/shivansh-12315646/Atmos.git
+cd Atmos
 
-2. **Frontend setup**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
+# Setup backend
+cd backend
+npm install
+cp .env.example .env
+npm run dev
 
-3. **Backend setup**
-   ```bash
-   cd backend
-   npm install
-   npm run dev
-   ```
+# Setup frontend (in new terminal)
+cd frontend
+npm install
+npm run dev
 
-4. **ML services setup**
-   ```bash
-   cd ml-services
-   pip install -r requirements.txt
-   python app.py
-   ```
+# Setup ML services (in new terminal)
+cd ml-services
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python app.py
+```
 
 ---
 
-## 📊 Roadmap
+## 📖 Documentation
 
-### Phase 1: Foundation (Weeks 1-2)
-- [x] Repository setup
-- [ ] Database schema design
-- [ ] API endpoint specification
-- [ ] UI/UX wireframes
+- **[Product Requirements](./docs/PRD.md)** — Detailed feature specifications
+- **[Architecture](./docs/ARCHITECTURE.md)** — System design & data flow
+- **[API Reference](./docs/API.md)** — Endpoint documentation
+- **[Ethics & Limitations](./docs/ETHICS.md)** — What this system does NOT do
 
-### Phase 2: Core Features (Weeks 3-5)
-- [ ] MCQ-based habit tracker
-- [ ] Emission calculation engine
-- [ ] User dashboard
-- [ ] Authentication system
+---
 
-### Phase 3: Intelligence Layer (Weeks 6-7)
-- [ ] ML clustering model
-- [ ] Habit recommendation engine
-- [ ] Impact ranking system
+## 🎯 What Makes Atmos Different?
 
-### Phase 4: Visualization (Week 8)
-- [ ] Map-based regional comparisons
-- [ ] Charts and analytics
-- [ ] Export functionality
+### ❌ Traditional Carbon Trackers
+- Focus on **total emissions**
+- Generic, one-size-fits-all advice
+- No explanation of **why** certain habits matter
+- Lead to carbon fatigue
 
-### Phase 5: Polish & Deploy (Weeks 9-10)
-- [ ] Explainability features
-- [ ] Performance optimization
-- [ ] Production deployment
-- [ ] Demo data & documentation
+### ✅ Atmos
+- Focus on **behavior patterns**
+- Personalized, explainable recommendations
+- ML-driven **impact ranking**
+- Designed for **sustained engagement**
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-### Team
-- **Shivansh** - Full-stack development, ML services
-- **[Friend's Name]** - Frontend, UI/UX, Dashboards
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-## 🌟 Interview-Safe Positioning
+## 👥 Team
 
-*"Most carbon trackers measure emissions. Atmos focuses on real-time behavior awareness and explainable prioritization, helping users understand where their actions have the highest impact."*
+Built by two college students passionate about climate tech:
+- **Shivansh** ([@shivansh-12315646](https://github.com/shivansh-12315646))
+- **[Your Friend's Name]** — *Add collaborator after invitation*
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+
+---
+
+## ⚠️ Important Disclaimers
+
+### What This System Does
+✅ Tracks user-reported activities in real time  
+✅ Calculates emissions using standardized factors  
+✅ Uses ML to identify behavior patterns  
+✅ Provides explainable, personalized recommendations  
+
+### What This System Does NOT Do
+❌ Predict climate change or future emissions  
+❌ Claim exact carbon accuracy (estimates only)  
+❌ Perform surveillance or passive tracking  
+❌ Judge or shame users for their choices  
+
+**Data Sources:** Regional benchmarks are sourced from periodically updated public datasets (IPCC, national energy databases) and used as reference baselines.
+
+---
+
+## 🌟 Roadmap
+
+- [ ] Phase 1: Core tracking + emission engine
+- [ ] Phase 2: ML recommendation system
+- [ ] Phase 3: Map visualization + regional benchmarks
+- [ ] Phase 4: Organization dashboards
+- [ ] Phase 5: Mobile app
 
 ---
 
 ## 📞 Contact
 
-For questions or collaboration:
-- GitHub Issues: [Create an issue](https://github.com/shivansh-12315646/Atmos/issues)
-- Email: [Your email]
+For questions or feedback, open an issue or reach out via GitHub Discussions.
 
 ---
 
-**Built with 🌍 by two students who believe in honest, actionable climate tech.**
+**Built with 💚 for a sustainable future**
