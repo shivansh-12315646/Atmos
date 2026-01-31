@@ -151,8 +151,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for gu
 
 Built by two college students passionate about climate tech:
 - **Shivansh** ([@shivansh-12315646](https://github.com/shivansh-12315646))
-- **[Your Friend's Name]** — *Add collaborator after invitation*
-
+- **Vivek Maini**([@vivekmaini](https://github.com/vivekmaini))
 ---
 
 ## 📜 License
