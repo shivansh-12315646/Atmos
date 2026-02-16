@@ -533,3 +533,278 @@ body {
 .perspective-card:hover .perspective-card-inner {
   transform: rotateY(10deg) rotateX(5deg);
 }
+
+/* ============================================
+   REVOLUTIONARY DESIGN SYSTEM - NEOMORPHIC LIQUID ECOSYSTEM
+   ============================================ */
+
+/* Liquid Morphing Animation */
+.liquid-morph {
+  animation: liquidMorph 8s ease-in-out infinite;
+  will-change: border-radius;
+}
+
+@keyframes liquidMorph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
+  }
+  75% {
+    border-radius: 80% 20% 50% 50% / 75% 25% 80% 20%;
+  }
+}
+
+/* Neomorphic Shadow System */
+.neomorphic-card {
+  position: relative;
+  background: #e0e5ec;
+  border-radius: 30px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.shadow-neo {
+  box-shadow: 
+    12px 12px 24px rgba(163, 177, 198, 0.6),
+    -12px -12px 24px rgba(255, 255, 255, 0.5);
+}
+
+.shadow-neo-pressed {
+  box-shadow: 
+    inset 4px 4px 8px rgba(163, 177, 198, 0.4),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Breathing Animation (Biometric) */
+.breathing {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
+/* Heartbeat Pulse (Biometric) */
+.heartbeat-pulse {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.15);
+  }
+  40%, 100% {
+    transform: scale(1);
+  }
+}
+
+/* Breathing Pulse (Soft) */
+.breathing-pulse {
+  animation: breathingPulse 4s ease-in-out infinite;
+}
+
+@keyframes breathingPulse {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Ripple Animation */
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 0.8s ease-out;
+}
+
+/* Quantum Blur Effect */
+.quantum-blur {
+  filter: blur(0);
+  transition: filter 0.3s ease;
+}
+
+.quantum-blur:hover {
+  filter: blur(2px);
+  animation: quantumFlicker 0.2s ease-in-out 3;
+}
+
+@keyframes quantumFlicker {
+  0%, 100% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(4px);
+  }
+}
+
+/* Organic Growth Pattern */
+@keyframes organicGrowth {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.organic-growth {
+  animation: organicGrowth 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/* Synesthetic Color Temperature */
+.temp-hot {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  animation: breathingPulse 2s ease-in-out infinite;
+}
+
+.temp-warm {
+  background: linear-gradient(135deg, #f59e0b, #eab308);
+  animation: breathingPulse 3s ease-in-out infinite;
+}
+
+.temp-cool {
+  background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+  animation: breathingPulse 4s ease-in-out infinite;
+}
+
+.temp-cold {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  animation: breathingPulse 5s ease-in-out infinite;
+}
+
+/* Living Ecosystem - Day/Night Cycle */
+@keyframes dayNightCycle {
+  0% {
+    filter: brightness(0.7) saturate(0.8);
+  }
+  25% {
+    filter: brightness(1) saturate(1);
+  }
+  50% {
+    filter: brightness(1.1) saturate(1.2);
+  }
+  75% {
+    filter: brightness(0.9) saturate(0.9);
+  }
+  100% {
+    filter: brightness(0.7) saturate(0.8);
+  }
+}
+
+.day-night-cycle {
+  animation: dayNightCycle 60s linear infinite;
+}
+
+/* Magnetic Pull Effect */
+.magnetic-pull {
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
+}
+
+/* Particle Glow */
+.particle-glow {
+  box-shadow: 0 0 10px currentColor,
+              0 0 20px currentColor,
+              0 0 30px currentColor;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Constellation Line */
+.constellation-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawLine 2s ease-in-out forwards;
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .liquid-morph {
+    animation: none;
+  }
+  
+  .breathing,
+  .breathing-pulse,
+  .heartbeat-pulse {
+    animation: none;
+  }
+  
+  .particle-glow {
+    animation: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .neomorphic-card {
+    border: 2px solid currentColor;
+  }
+  
+  .shadow-neo {
+    box-shadow: 0 0 0 2px currentColor;
+  }
+}
